@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Rubik&family=Source+Sans+Pro:ital,wght@0,200;1,200;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+.navbar {
+  display: flex;
+  padding: 2% 2%;
+  justify-content: space-between;
+  /* align-items: left; */
+  background-color: #291e5b;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 26px;
+  position: relative;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Fira Sans', sans-serif;
+  display: flex;
+  align-items: left;
+}
+
+.navbar ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #e4ed2b;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+
+}
+
+/* Center content */
+
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  widht: 100%;
+  background-image: linear-gradient(rgba(17, 3, 26), rgba(36, 3, 28, 0.7)), url(background1img.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+.infocontainer {
+
+  height: 48vh;
+  width: 82vw;
+  margin: 144px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.devInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2px;
+  
+
+}
+
+.hello {
+  font-size: 25px;
+  color: #FFFFFF;
+  font-family: "Rubik", Sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  padding: 0 179px;
+}
+
+.name {
+  padding: 8px 109px;
+  color: #FFFFFF;
+  font-family: "Rubik", Sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.about {
+  padding: 8px 68px;
+  color: #FFFFFF;
+  font-family: "Rubik", Sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.moreabout {
+  font-size: 18px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.buttons {
+  margin-top: 34px;
+}
+
+.hero-btn {
+  margin: 0 180px;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(244, 231, 231);
+  border: 2px solid rgb(186, 188, 185);
+  padding: 9px 14px;
+  font-size: 20px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  background-color: #74184e;
+  border-radius: 9px;
+
+}
+
+.hero-btn:hover {
+  border: 2px solid #bbe719;
+  background: #5f4ee0;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+.containerpic img {
+  height: 20vh;
+  padding: 15px 165px;
+}
+
+/* contact page */
+
+.contactform {
+  font-family: 'Fira Sans', sans-serif;
+  padding: 8px;
+
+}
+
+.contactform h1 {
+  font-family: "Rubik", Sans-serif;
+  text-align: center;
+}
+
+.contactform div {
+  padding: 2px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contactform form div input {
+
+  width: 30vw;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.contact-main {
+  background-image: linear-gradient(rgba(17, 3, 26), rgba(36, 3, 28, 0.7)), url(background2img.jpg);
+  display: inline-block;
+  width: 100vw;
+  height: 100vh;
+  color:#fff;
+}
+
+
+/* Contact page submit button */
+.btn {
+  margin: 0 68px;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(244, 231, 231);
+  border: 2px solid rgb(186, 188, 185);
+  padding: 3px 14px;
+  font-size: 20px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  background-color: #74184e;
+  border-radius: 9px;
+
+}
+
+.btn:hover {
+  border: 2px solid #bbe719;
+  background: #5f4ee0;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+/* Skills */
+
+.skillcontainer{
+  margin:0;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  background: #291e5b;
+  font-family: 'Fira Sans', sans-serif;
+  width:100%;
+  height:100vh;
+}
+
+a{
+  text-decoration: none!important;
+}
+.progress-title{
+  width:80vw;
+  height:auto;
+}
+.progress-title h3{
+  font-size: 18px;
+  font-weight: 700;
+  color:#fff;
+  margin:0 0 20px;
+}
+
+.progress{
+  height:20px;
+  background: #2d3158;
+  border-radius: 20px;
+  border: 1px solid #000;
+  box-shadow: 0 2px 2px #4f4c4c;
+  margin-bottom: 40px;
+  overflow: visible;
+  position: relative;
+}
+.progress .progress-bar{
+  border-radius: 20px;
+  border:1px solid #000;
+  animation:animate-positive 2s;
+}
+  
+/* about */
+.main-aboutcontainer{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color:#fff;
+  font-size:15px;
+  font-weight: 600;
+}
+.about-container{
+  padding:10px 0px;
+  background-image: linear-gradient(rgb(38, 15, 142), rgba(17, 25, 86, 0.7)), url(background2img.jpg);
+  display: inline-block;
+  /* width: 98vw; */
+  height: 84vh;
+}
+.about-container img{
+  /* height:auto; */
+  width:300px;
+  margin-left: 30px;
+  p
+}
+.about-text{
+  width:550px;
+}
+
+.about-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text h5{
+  font-family: "Rubik", Sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 0 20px 40px;
+}
+.about-text h1{
+  font-family: "Rubik", Sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 0 40px 65px;
+  color:rgb(214, 236, 53);
+}
+
+
+
+
+
+
+/* download cv button */
+.mycv{
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  widht: 100%;
+ background-position: center;
+  background-size: cover;
+  position: relative;
+  
+}
+
+/* footer */
+footer {
+  background-color: #291e5b;
+  color: azure;
+  height: 5vh;
+  font-family: 'Fira Sans', sans-serif;
+  padding: 36px;
+}
+
+.center {
+  text-align: center;
+}
+.bi{
+padding:10px;
+margin:26px;
+font-size: 20px;
+text-align: right;
+}
